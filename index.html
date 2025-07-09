@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUMINA - Romantic Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a2e0e6f67c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="app">
+    <!-- Escena del día -->
+    <section id="scene">
+      <div id="scene-overlay">
+        <h1 id="scene-title">Buenos días, soñadora ☁️</h1>
+        <p id="scene-description">Es una mañana brillante para crear algo hermoso.</p>
+      </div>
+    </section>
+
+    <!-- Planner visual -->
+    <section id="planner">
+      <h2>Tu Planner Visual</h2>
+      <div class="task-input">
+        <input type="text" id="taskInput" placeholder="Escribe una tarea...">
+        <button onclick="addTask()">Añadir</button>
+      </div>
+      <ul id="taskList"></ul>
+    </section>
+
+    <!-- Modo main character -->
+    <section id="main-character">
+      <h2>Modo Main Character 🎧</h2>
+      <button onclick="toggleMainCharacterMode()">Activar modo cinematográfico</button>
+      <div id="quoteDisplay"></div>
+    </section>
+
+    <!-- Biblioteca emocional -->
+    <section id="library">
+      <h2>Biblioteca Emocional</h2>
+      <textarea id="diaryEntry" placeholder="Escribe lo que sientes hoy..."></textarea>
+      <button onclick="saveEntry()">Guardar</button>
+      <div id="entryList"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
