@@ -46,3 +46,56 @@ function saveEntry() {
     document.getElementById("diaryEntry").value = "";
   }
 }
+// 🎬 DreamFrame: Modo Escena
+function generateMovieScene() {
+  const mood = document.getElementById("sceneMood").value;
+  const result = document.getElementById("sceneResult");
+  let output = "";
+
+  switch (mood) {
+    case "feliz":
+      output = "🌞 Una escena brillante con risas, cámara lenta y una canción alegre.";
+      break;
+    case "nostálgico":
+      output = "🍂 Filtros sepia, música de piano suave, recuerdos flotando como hojas.";
+      break;
+    case "dramático":
+      output = "🌧️ Lluvia, close-ups intensos y una balada poderosa de fondo.";
+      break;
+    case "aesthetic":
+      output = "✨ Tonos pastel, texto flotante, luces suaves y frases inspiradoras.";
+      break;
+  }
+
+  result.textContent = output;
+}
+
+// 🧠 MemoryVerse: Diario audiovisual emocional
+function createMemoryVerse() {
+  const input = document.getElementById("memoryVerseInput").value;
+  if (input.trim() !== "") {
+    const entry = document.createElement("div");
+    entry.className = "entry";
+    entry.textContent = `🎞️ “${input}” fue archivado como una escena memorable.`;
+    document.getElementById("memoryTimeline").appendChild(entry);
+    document.getElementById("memoryVerseInput").value = "";
+  }
+}
+
+// 🪄 Widgets mágicos
+const moods = ["Feliz", "Cansada pero inspirada", "Melancólica creativa", "Caótica brillante"];
+const quotes = [
+  "Hoy es un buen día para ser tu versión más romántica.",
+  "No es solo un lunes, es el inicio de tu capítulo favorito.",
+  "Tu rutina también puede ser arte.",
+  "La belleza está en los detalles que solo tú ves."
+];
+
+function updateWidgets() {
+  const mood = moods[Math.floor(Math.random() * moods.length)];
+  const quote = quotes[Math.floor(Math.random() * quotes.length)];
+  document.getElementById("emotionalClock").textContent = `🕰️ Estado emocional: ${mood}`;
+  document.getElementById("motivationalQuote").textContent = `✨ Frase del día: "${quote}"`;
+}
+
+updateWidgets();
