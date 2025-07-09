@@ -132,3 +132,37 @@ body {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+#dreamframe {
+  padding: 2rem;
+  background-color: #fff0f7;
+}
+
+.mode-selector, .memoryverse, .emotional-widgets {
+  margin-top: 2rem;
+}
+
+select, textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  border: 1px solid #ccc;
+  margin-top: 0.5rem;
+  font-family: 'Georgia', serif;
+}
+
+#sceneResult, #memoryTimeline {
+  margin-top: 1rem;
+  background: #fdf4ff;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-style: italic;
+}
+
+#emotionalClock, #motivationalQuote {
+  background: #ffe4fa;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
