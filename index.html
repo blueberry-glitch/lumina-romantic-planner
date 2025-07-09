@@ -46,3 +46,34 @@
   <script src="script.js"></script>
 </body>
 </html>
+<!-- DreamFrame: Romantic Video Generator -->
+<section id="dreamframe">
+  <h2>🌟 DreamFrame: Escenas de Película</h2>
+  <p>Romantiza tu vida creando <em>escenas de película</em> con tu día a día.</p>
+
+  <div class="mode-selector">
+    <label for="sceneMood">🎥 Modo Escena:</label>
+    <select id="sceneMood">
+      <option value="feliz">Feliz</option>
+      <option value="nostálgico">Nostálgico</option>
+      <option value="dramático">Dramático</option>
+      <option value="aesthetic">Aesthetic</option>
+    </select>
+    <button onclick="generateMovieScene()">Crear escena</button>
+  </div>
+
+  <div id="sceneResult"></div>
+
+  <div class="memoryverse">
+    <h3>🧠 MemoryVerse: Diario audiovisual</h3>
+    <textarea id="memoryVerseInput" placeholder="Describe tu día o tu emoción..."></textarea>
+    <button onclick="createMemoryVerse()">Guardar recuerdo animado</button>
+    <div id="memoryTimeline"></div>
+  </div>
+
+  <div class="emotional-widgets">
+    <h3>🪄 Widgets mágicos</h3>
+    <div id="emotionalClock">🕰️ Estado emocional: —</div>
+    <div id="motivationalQuote">✨ Frase del día: —</div>
+  </div>
+</section>
